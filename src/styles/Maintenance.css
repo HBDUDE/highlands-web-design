@@ -1,0 +1,96 @@
+/* Animations */
+@keyframes title-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.under-maintenance {
+  background: white;
+  color: black;
+  justify-self: center;
+  padding: 10px;
+  border-radius: 5px;
+  /* border: 0.5px solid rgb(0, 0, 0); */
+  /* Below code thanks to https://www.cssmatic.com/box-shadow */
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  display: grid;
+  align-content: center;
+  height: 25vh;
+
+  /* transform: translateY(-60px); */
+}
+
+.maintenance-icon {
+  /* align-self: center; */
+  justify-self: center;
+}
+
+.maintenance-p {
+  font-family: 'Roboto', sans-serif;
+  /* align-self: flex-end; */
+  margin-top: 0;
+}
+
+.section1 {
+  background: url("../images/computer3.jpg");
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+  background-size: cover;
+  display: grid;
+}
+
+.section1Title {
+  color: white;
+  font-family: 'Permanent Marker';
+  font-size: 4rem;
+  justify-self: center;
+  text-align: center;
+
+  animation: title-fade-in 4s;
+}
+
+/* .section1PostTitle {
+  font-family: 'Permanent Marker';
+  color: white;
+  font-family: 'Permanent Marker';
+  font-size: 3.5rem;
+  justify-self: center;
+} */
+
+.section1Attrib {
+  color: white;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-right: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  .section1Title {
+    margin-top: 10px;
+    font-size: 2.3rem;
+  }
+
+  .section1Attrib {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-height: 450) {
+  .under-maintenance {
+    height: 40vh;
+  }
+}

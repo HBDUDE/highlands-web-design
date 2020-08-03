@@ -1,0 +1,38 @@
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.new-home-grid1 {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  width: 90%;
+  margin: auto;
+  grid-gap: 5px;
+
+  .side-pic-1 {
+    background-image: url("../images/code.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  }
+
+  .side-pic-2 {
+    background-image: url("../images/money.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .new-home-grid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1fr;
+  }
+}
