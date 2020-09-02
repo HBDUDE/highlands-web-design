@@ -20,7 +20,7 @@ export default function ContactForm() {
         Send us an email:
       </Typography>
       <div style={styles.mailConatiner}>
-        <a href="mailto:Contact@HighlandsWebDesign.com"style={styles.a}>Contact@HighlandsWebDesign.com</a>
+        <a href="mailto:contact.us.highlandswebdesign@gmail.com"style={styles.a}>contact.us.highlandswebdesign@gmail.com</a>
       </div>
     </div>
   );
