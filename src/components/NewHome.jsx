@@ -221,9 +221,8 @@ import Box from "@material-ui/core/Box";
 
 import ContactForm from './ContactForm';
 
-import ReactImageAppear from 'react-image-appear';
-import codeImg from "../images/code.jpg";
-import moneyImg from "../images/money.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLaptopCode, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons'
 
 import "../styles/new-home.scss";
 
@@ -373,18 +372,22 @@ export default function NewHome() {
         {pageState === "why-us" && (
           <div className="new-home-grid1" id="why-us">
             <Typography variant="h4" align="center">
-              <span style={{ fontWeight: "bold", textTransform: "uppercase" }}>
-                Professional development
+              <span style={{ fontWeight: "bold" }}>
+                Professional Development
               </span><br/>
               We take care of design, coding, hosting, and search engine
               optimization. Contact us today for a free consultation
             </Typography>
-            {/* <div className="side-pic"> */}
-              <ReactImageAppear 
-                src={codeImg}
-                className="img-class"
-              />
-            {/* </div> */}
+            <div className="side-section">
+              {/* <div className="img-class">
+                <ReactImageAppear 
+                  src={codeImg}
+                  className="img-class"
+                />
+              </div> */}
+              <FontAwesomeIcon className="font-awesome" icon={faLaptopCode} />
+            </div>
+
           </div>
         )}
 
@@ -392,16 +395,20 @@ export default function NewHome() {
           <div className="new-home-grid1" id="pricing">
             <Typography variant="h4" align="center">
               <span style={{ fontWeight: "bold" }}>
-                AFFORDABLE WEB DESIGN
+                Affordable Web Design
               </span><br/>
               We offer financing options such as low monthly payments to get your site up and running without hurting your wallet!
             </Typography>
-            {/* <div className="side-pic"> */}
-              <ReactImageAppear 
-                src={moneyImg}
-                className="img-class"
-              />
-            {/* </div> */}
+            <div className="side-section">
+              {/* <div className="img-class"> */}
+                {/* <ReactImageAppear 
+                  src={moneyImg}
+                  className="img-class"
+                /> */}
+              {/* </div> */}
+              <FontAwesomeIcon className="font-awesome" icon={faMoneyCheckAlt} />
+            </div>
+
           </div>
         )}
 
