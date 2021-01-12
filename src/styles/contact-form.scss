@@ -1,0 +1,38 @@
+// .top-level-form-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   width: 100%;
+// }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.message-success-hidden {
+  display: none;
+}
+
+.message-success {
+  display: block;
+}
+
+.message-failure-hidden {
+  display: none;
+}
+
+.message-failure {
+  display: block;
+}
+
+// .contact-form-group {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .flex-input {
+//   width: 40vw;
+//   margin-bottom: 20px;
+// }

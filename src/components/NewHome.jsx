@@ -283,6 +283,11 @@ export default function NewHome() {
   const classes = useStyles();
   const [pageState, setPageState] = useState("why-us");
 
+  const contactClick = () => {
+    setPageState("contact"); 
+    window.scrollTo(0,document.body.scrollHeight);
+  }
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -310,9 +315,9 @@ export default function NewHome() {
               color="primary"
               variant="outlined"
               className={classes.link}
-              onClick={() => setPageState("contact")}
+              onClick={ () => contactClick() }
             >
-              Contact
+              Contact Us
             </Button>
           </nav>
         </Toolbar>
@@ -362,7 +367,7 @@ export default function NewHome() {
           <Button
             color="secondary"
             className={classes.linkButton}
-            onClick={() => setPageState("contact")}
+            onClick={() => contactClick()}
             variant="contained"
           >
             Contact
@@ -413,9 +418,13 @@ export default function NewHome() {
         )}
 
         {pageState === "contact" && (
-          <>
+          <div style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "center"
+          }}>
             <ContactForm/>
-          </>
+          </div>
         )}
       </Container>
 
