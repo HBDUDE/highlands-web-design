@@ -5,17 +5,15 @@ import '../styles/contact-form.scss'
 
 export default function ContactForm() {
 
-  function sendEmail(e) {
+  async function sendEmail(e) {
     e.preventDefault()
-    emailjs.sendForm('service_1zy4bex', 'template_bsdnx1q', e.target, 'user_zTtYQZEhcFOIsiUKK8gwl')
+    await emailjs.sendForm('service_1zy4bex', 'template_bsdnx1q', e.target, 'user_zTtYQZEhcFOIsiUKK8gwl')
       .then((result) => {
-        document.getElementById("form").reset()
-        if (result.text === "OK") {
-          alert("Message sent successfully.")
-        }
+        result.text === "OK" && alert("Your message has been submitted successfully.")
       }, (error) => {
         console.log(error.text);
       });
+      document.getElementById("form").reset()
   }
 
   return (
@@ -23,11 +21,11 @@ export default function ContactForm() {
       <form className="contact-form" id="form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
         <label className="form-label">Name</label>
-        <input type="text" name="user_name" className="form-input"/>
+        <input type="text" name="user_name" className="form-input" required/>
         <label className="form-label">Email</label>
-        <input type="email" name="user_email" className="form-input"/>
+        <input type="email" name="user_email" className="form-input" required/>
         <label className="form-label">Message</label>
-        <textarea name="message" className="form-input form-text-area"/>
+        <textarea name="message" className="form-input form-text-area" required/>
         <input type="submit" value="Send" className="form-submit"/>
       </form>
     </div>
