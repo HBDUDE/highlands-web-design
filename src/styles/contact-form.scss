@@ -11,20 +11,25 @@
   width: 60vw;
 }
 
-.message-success-hidden {
-  display: none;
+.form-label {
+  font-size: 120%;
+  font-weight: bold;
 }
 
-.message-success {
-  display: block;
+.form-input {
+  margin-bottom: 15px;
 }
 
-.message-failure-hidden {
-  display: none;
+.form-text-area {
+  height: 80px;
 }
 
-.message-failure {
-  display: block;
+.form-submit {
+  width: 30%;
+  padding: 8px 15px;
+  margin: auto;
+  font-size: 120%;
+  font-weight: bold;
 }
 
 // .contact-form-group {
