@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import '../styles/Maintenance.css';
+import '../styles/Maintenance.css';
 
 import BuildIcon from '@material-ui/icons/Build';
 

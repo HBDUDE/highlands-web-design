@@ -1,17 +1,27 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
+import Button from "@material-ui/core/Button";
+import {toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 import '../styles/contact-form.scss'
 
+toast.configure() 
+
 export default function ContactForm() {
+
+  function notify() {
+    toast("Your email has been sent successfully!")
+  }
 
   async function sendEmail(e) {
     e.preventDefault()
     await emailjs.sendForm('service_1zy4bex', 'template_bsdnx1q', e.target, 'user_zTtYQZEhcFOIsiUKK8gwl')
       .then((result) => {
-        result.text === "OK" && alert("Your message has been submitted successfully.")
+        notify()
+        console.log(result.text)
       }, (error) => {
-        console.log(error.text);
+        console.log(error.text)
       });
       document.getElementById("form").reset()
   }
@@ -26,7 +36,15 @@ export default function ContactForm() {
         <input type="email" name="user_email" className="form-input" required/>
         <label className="form-label">Message</label>
         <textarea name="message" className="form-input form-text-area" required/>
-        <input type="submit" value="Send" className="form-submit"/>
+        {/* <input type="submit" value="Send" className="form-submit"/> */}
+        <Button
+          color="secondary"
+          variant="contained"
+          type="submit"
+          className="form-button"
+        >
+          Send Email
+        </Button>
       </form>
     </div>
   );

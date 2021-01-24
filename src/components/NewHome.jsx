@@ -233,7 +233,7 @@ function Copyright() {
       <Link color="inherit" href="https://highlandswebdesign.com/">
         highlandswebdesign.com
       </Link>
-      {" 2020."}
+      {" 2020 | (310) 562-7707 | Portfolio of work upon request."}
     </Typography>
   );
 }
@@ -323,13 +323,17 @@ export default function NewHome() {
         </Toolbar>
       </AppBar>
       {/* Hero unit */}
-      <Container maxWidth="sm" component="main" className={classes.heroContent}>
+      <Container maxWidth="sm" component="main" className={classes.heroContent} className="title-wrapper">
         <Typography
           component="h1"
           variant="h2"
           align="center"
           color="textPrimary"
           gutterBottom
+          className="main-title"
+          style={{
+            fontSize: "2.7rem"
+          }}
         >
           Highlands Web Design
         </Typography>
@@ -338,6 +342,10 @@ export default function NewHome() {
           align="center"
           color="textSecondary"
           component="p"
+          className="main-sub-title"
+          style={{
+            fontSize: "1.3rem"
+          }}
         >
           High-quality, affordable websites to take your company to the next
           level.
@@ -374,9 +382,16 @@ export default function NewHome() {
           </Button>
         </div>
 
+        <div className="centered-content">
         {pageState === "why-us" && (
           <div className="new-home-grid1" id="why-us">
-            <Typography variant="h4" align="center">
+            <Typography 
+              variant="h4" 
+              align="center" 
+              style={{
+                fontSize: "1.5rem"
+              }}
+            >
               <span style={{ fontWeight: "bold" }}>
                 Professional Development
               </span><br/>
@@ -390,7 +405,9 @@ export default function NewHome() {
                   className="img-class"
                 />
               </div> */}
-              <FontAwesomeIcon className="font-awesome" icon={faLaptopCode} />
+              <FontAwesomeIcon className="font-awesome" icon={faLaptopCode} style={{
+                fontSize: "12rem"
+              }}/>
             </div>
 
           </div>
@@ -398,7 +415,9 @@ export default function NewHome() {
 
         {pageState === "pricing" && (
           <div className="new-home-grid1" id="pricing">
-            <Typography variant="h4" align="center">
+            <Typography variant="h4" align="center" style={{
+                fontSize: "1.5rem"
+            }}>
               <span style={{ fontWeight: "bold" }}>
                 Affordable Web Design
               </span><br/>
@@ -411,7 +430,9 @@ export default function NewHome() {
                   className="img-class"
                 /> */}
               {/* </div> */}
-              <FontAwesomeIcon className="font-awesome" icon={faMoneyCheckAlt} />
+              <FontAwesomeIcon className="font-awesome" icon={faMoneyCheckAlt} style={{
+                fontSize: "12rem"
+              }}/>
             </div>
 
           </div>
@@ -426,6 +447,7 @@ export default function NewHome() {
             <ContactForm/>
           </div>
         )}
+        </div>
       </Container>
 
       {/* Footer */}

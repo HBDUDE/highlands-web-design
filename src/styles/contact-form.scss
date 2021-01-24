@@ -32,6 +32,30 @@
   font-weight: bold;
 }
 
+.form-button {
+  width: 10vw;
+  align-self: center;
+}
+
+// contact button media queries
+@media screen and (max-width: 1200px) {
+  .form-button {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-button {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .form-button {
+    width: 35vw;
+  }
+}
+
 // .contact-form-group {
 //   display: flex;
 //   justify-content: space-between;

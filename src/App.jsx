@@ -3,7 +3,7 @@ import React from 'react';
 import Maintenance from './components/Maintenance';
 import NewHome from './components/NewHome';
 
-var pageVariable = 'new-home';
+var pageVariable = 'maintenance';
 
 const App = () => {
   if(pageVariable === 'maintenance') {
