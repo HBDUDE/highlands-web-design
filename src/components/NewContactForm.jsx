@@ -13,15 +13,15 @@ export default function ContactForm() {
 
   const [opacityState, setOpacityState] = useState(0)
 
-  async function sendEmail(e) {
+  function sendEmail(e) {
     e.preventDefault()
-    await emailjs.sendForm('service_1zy4bex', 'template_bsdnx1q', e.target, 'user_zTtYQZEhcFOIsiUKK8gwl')
+    emailjs.sendForm('service_1zy4bex', 'template_bsdnx1q', e.target, 'user_zTtYQZEhcFOIsiUKK8gwl')
       .then((result) => {
         console.log(result.text)
       }, (error) => {
         console.log(error.text)
       });
-      document.getElementById("form").reset()
+    document.getElementById("form").reset()
     setOpacityState(1)
     setTimeout(() => setOpacityState(0), 3500)
   }
