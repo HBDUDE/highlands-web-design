@@ -27,8 +27,8 @@ export default function ContactForm() {
   }
 
   return (
-    <div>
-      <form className="contact-form" id="form" onSubmit={sendEmail}>
+    <div style={{ width: "100%" }}>
+      <form className="contact-form" id="form" onSubmit={sendEmail} style={{ width: "100%" }}>
         <input type="hidden" name="contact_number" />
         <label className="form-label">Name</label>
         <input type="text" name="user_name" className="form-input" required/>

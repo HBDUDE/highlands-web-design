@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Maintenance from './components/Maintenance';
-import NewHome from './components/NewHome';
+import Maintenance from './components/Maintenance'
+import NewHome from './components/NewHome'
+import NewNewHome from './components/NewNewHome'
 
-var pageVariable = 'maintenance';
+const pageVariable = 'new-home'
 
 const App = () => {
   if(pageVariable === 'maintenance') {
@@ -12,5 +13,8 @@ const App = () => {
   else if(pageVariable === 'new-home') {
     return <NewHome/>
   } 
+  else if(pageVariable === 'new-new-home') {
+    return <NewNewHome/>
+  }
 }
 export default App;

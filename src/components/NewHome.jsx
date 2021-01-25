@@ -262,7 +262,8 @@ const useStyles = makeStyles(theme => ({
   linkButton: {
     margin: theme.spacing(1, 1.5),
     textTransform: "capitalize",
-    // fontSize: "1.3rem"
+    fontSize: "1rem",
+    fontWeight: 'bolder'
   },
   heroContent: {
     padding: theme.spacing(8, 0, 6)
@@ -332,10 +333,16 @@ export default function NewHome() {
           gutterBottom
           className="main-title"
           style={{
-            fontSize: "2.7rem"
+            // border: "1px solid black",
+            // borderRadius: "2px",
+            // boxShadow: "0px 6px 10px 0px #000000",
+            fontSize: "3rem",
+            fontFamily: "Cinzel",
+            width:"100%"
           }}
         >
           Highlands Web Design
+          {/* This font doesnt have any more bold */}
         </Typography>
         <Typography
           variant="h5"
@@ -344,7 +351,8 @@ export default function NewHome() {
           component="p"
           className="main-sub-title"
           style={{
-            fontSize: "1.3rem"
+            fontSize: "1.3rem",
+            fontFamily: "Cabin"
           }}
         >
           High-quality, affordable websites to take your company to the next
@@ -441,7 +449,7 @@ export default function NewHome() {
         {pageState === "contact" && (
           <div style={{
             display: "flex",
-            width: "100%",
+            width: "65%",
             justifyContent: "center"
           }}>
             <ContactForm/>
