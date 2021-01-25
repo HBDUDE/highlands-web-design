@@ -262,8 +262,7 @@ const useStyles = makeStyles(theme => ({
   linkButton: {
     margin: theme.spacing(1, 1.5),
     textTransform: "capitalize",
-    fontSize: "1rem",
-    fontWeight: 'bolder'
+    fontFamily: "Cabin",
   },
   heroContent: {
     padding: theme.spacing(8, 0, 6)
