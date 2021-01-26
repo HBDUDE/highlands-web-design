@@ -4,7 +4,7 @@ import Maintenance from './components/Maintenance'
 import NewHome from './components/NewHome'
 import NewNewHome from './components/NewNewHome'
 
-const pageVariable = 'new-new-home'
+const pageVariable = 'new-home'
 
 const App = () => {
   if(pageVariable === 'maintenance') {

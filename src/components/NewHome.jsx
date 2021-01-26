@@ -291,37 +291,6 @@ export default function NewHome() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar
-        position="sticky"
-        color="default"
-        elevation={0}
-        className={classes.appBar}
-      >
-        <Toolbar className={classes.toolbar}>
-          <Typography
-            variant="h6"
-            color="inherit"
-            noWrap
-            className={classes.toolbarTitle}
-          >
-            Highlands Web Design
-          </Typography>
-          <nav>
-            {/* <Button href="#" color="primary" variant="outlined" className={classes.link}>
-            Why Us?
-          </Button> */}
-            <Button
-              href="#contact"
-              color="primary"
-              variant="outlined"
-              className={classes.link}
-              onClick={ () => contactClick() }
-            >
-              Contact Us
-            </Button>
-          </nav>
-        </Toolbar>
-      </AppBar>
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" className={classes.heroContent} className="title-wrapper">
         <Typography
@@ -336,7 +305,7 @@ export default function NewHome() {
             // borderRadius: "2px",
             // boxShadow: "0px 6px 10px 0px #000000",
             fontSize: "3rem",
-            fontFamily: "Cinzel",
+            fontFamily: "Cabin",
             width:"100%"
           }}
         >
