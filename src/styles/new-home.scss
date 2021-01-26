@@ -70,6 +70,7 @@
   text-align: center;
   justify-self: center;
   animation: title-fade-in 2.5s;
+  font-size: 2rem;
 }
 
 .main-sub-title {
@@ -129,6 +130,11 @@
 }
 
 @media screen and (max-width: 700px) {
+
+  .main-title {
+    font-size: 2rem;
+  }
+  
   .new-home-grid1 {
     justify-content: left;
 

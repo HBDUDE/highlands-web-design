@@ -314,7 +314,7 @@ export default function NewHome() {
             // border: "1px solid black",
             // borderRadius: "2px",
             // boxShadow: "0px 6px 10px 0px #000000",
-            fontSize: "3rem",
+            fontSize: "2.5rem",
             fontFamily: "Cabin",
             width:"100%"
           }}
