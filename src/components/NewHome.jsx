@@ -414,7 +414,7 @@ export default function NewHome() {
             <Typography variant="h4" className="" style={{
                 fontSize: "1.5rem"
             }}>
-              <span className="panel-text" style={{ fontWeight: "bold" }}>
+              <span className="panel-text" style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
                 Affordable Web Design
               </span><br/>
               We offer financing options such as low monthly payments to get your site up and running without hurting your wallet!
