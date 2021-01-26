@@ -383,11 +383,11 @@ export default function NewHome() {
               variant="h4" 
               // align="center" 
               className="panel-text"
-              style={{
-                fontSize: "1.5rem"
-              }}
+              // style={{
+              //   fontSize: "1.5rem"
+              // }}
             >
-              <span style={{ fontWeight: "bold", marginBottom: "10px" }}>
+              <span className="panel-text-title" style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
                 Professional Development
               </span><br/>
               We take care of design, coding, hosting, and search engine

@@ -103,6 +103,7 @@
 
   .panel-text {
     text-align: center;
+    font-size: 1.5rem;
   }
 
   .side-section {
@@ -119,17 +120,23 @@
 
 @media screen and (max-width: 870px) {
   .new-home-grid1 {
-    justify-content: left;
     grid-template-columns: 1fr;
-    grid-template-rows: .7fr 1fr;
+    grid-template-rows: 1fr .35fr;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 700px) {
   .new-home-grid1 {
+    justify-content: left;
+
+    .side-section {
+      display: none;
+    }
+
     .panel-text {
       text-align: left;
+      // font-size: 2rem;
     }
     
     .panel-icon {
