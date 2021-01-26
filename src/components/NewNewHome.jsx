@@ -194,7 +194,8 @@ export default function NewHome() {
                 /> */}
               {/* </div> */}
               <FontAwesomeIcon className="font-awesome" icon={faMoneyCheckAlt} style={{
-                fontSize: "12rem"
+                fontSize: "12rem",
+                color: "black"
               }}/>
             </div>
 
