@@ -296,7 +296,6 @@ export default function NewHome() {
         <Typography
           component="h1"
           variant="h2"
-          align="center"
           color="textPrimary"
           gutterBottom
           className="main-title"
@@ -314,7 +313,6 @@ export default function NewHome() {
         </Typography>
         <Typography
           variant="h5"
-          align="center"
           color="textSecondary"
           component="p"
           className="main-sub-title"
@@ -335,6 +333,9 @@ export default function NewHome() {
             className={classes.linkButton}
             onClick={() => setPageState("why-us")}
             variant="contained"
+            style={{
+              width: "10rem"
+            }}
           >
             Why Us?
           </Button>
@@ -344,6 +345,9 @@ export default function NewHome() {
             className={classes.linkButton}
             onClick={() => setPageState("pricing")}
             variant="contained"
+            style={{
+              width: "10rem"
+            }}
           >
             Pricing
           </Button>
@@ -353,6 +357,9 @@ export default function NewHome() {
             className={classes.linkButton}
             onClick={() => contactClick()}
             variant="contained"
+            style={{
+              width: "10rem"
+            }}
           >
             Contact
           </Button>
@@ -363,16 +370,17 @@ export default function NewHome() {
           <div className="new-home-grid1" id="why-us">
             <Typography 
               variant="h4" 
-              align="center" 
+              // align="center" 
+              className="panel-text"
               style={{
                 fontSize: "1.5rem"
               }}
             >
-              <span style={{ fontWeight: "bold" }}>
+              <span style={{ fontWeight: "bold", marginBottom: "10px" }}>
                 Professional Development
               </span><br/>
               We take care of design, coding, hosting, and search engine
-              optimization. Contact us today for a free consultation
+              optimization. Contact us today for a free consultation.
             </Typography>
             <div className="side-section">
               {/* <div className="img-class">
@@ -381,7 +389,7 @@ export default function NewHome() {
                   className="img-class"
                 />
               </div> */}
-              <FontAwesomeIcon className="font-awesome" icon={faLaptopCode} style={{
+              <FontAwesomeIcon className="font-awesome panel-icon" icon={faLaptopCode} style={{
                 fontSize: "12rem"
               }}/>
             </div>
@@ -391,10 +399,10 @@ export default function NewHome() {
 
         {pageState === "pricing" && (
           <div className="new-home-grid1" id="pricing">
-            <Typography variant="h4" align="center" style={{
+            <Typography variant="h4" className="" style={{
                 fontSize: "1.5rem"
             }}>
-              <span style={{ fontWeight: "bold" }}>
+              <span className="panel-text" style={{ fontWeight: "bold" }}>
                 Affordable Web Design
               </span><br/>
               We offer financing options such as low monthly payments to get your site up and running without hurting your wallet!
@@ -406,7 +414,7 @@ export default function NewHome() {
                   className="img-class"
                 /> */}
               {/* </div> */}
-              <FontAwesomeIcon className="font-awesome" icon={faMoneyCheckAlt} style={{
+              <FontAwesomeIcon className="font-awesome panel-icon" icon={faMoneyCheckAlt} style={{
                 fontSize: "12rem"
               }}/>
             </div>
