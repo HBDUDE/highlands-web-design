@@ -324,12 +324,14 @@ export default function NewHome() {
         </Typography>
         <Typography
           variant="h5"
-          color="textSecondary"
+          // color="textSecondary"
           component="p"
           className="main-sub-title"
           style={{
             fontSize: "1.3rem",
-            fontFamily: "Cabin"
+            fontFamily: "Cabin",
+            color: "#3b3b3",
+            opacity: .8
           }}
         >
           High-quality, affordable websites to take your company to the next
