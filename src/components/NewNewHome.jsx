@@ -88,16 +88,16 @@ export default function NewHome() {
 
   return (
     <CssBaseline>
-    <div className="bg" style={{
-      // backgroundPosition: "center center",
-      // backgroundRepeat: "no-repeat",
-      // backgroundAttachment: "fixed",
-      // backgroundSize: "cover",
-      height: "100vh",
-      width: "100vw",
-      position: "absolute",
-      // background: "#d4d4d4"
-    }}>
+      <div className="bg" style={{
+        // backgroundPosition: "center center",
+        // backgroundRepeat: "no-repeat",
+        // backgroundAttachment: "fixed",
+        // backgroundSize: "cover",
+        height: "100vh",
+        width: "100vw",
+        position: "absolute",
+        // background: "#d4d4d4"
+      }}>
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" className={classes.heroContent} className="title-wrapper">
         <Typography

@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import emailjs from 'emailjs-com'
 // import Button from "@material-ui/core/Button";
-import { Button } from 'reactstrap'
+// import { Button } from 'reactstrap'
+import Button from "@material-ui/core/Button";
 import {toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -30,7 +31,8 @@ export default function ContactForm() {
     <div style={{ width: "100%" }}>
 
       <div className="success" style={{
-        opacity: opacityState
+        opacity: opacityState,
+        color: "#008507"
       }}>
         Email sent!
       </div>
@@ -45,7 +47,7 @@ export default function ContactForm() {
         <textarea name="message" className="form-input form-text-area" required/>
         {/* <input type="submit" value="Send" className="form-submit"/> */}
         <Button
-          color="secondary"
+          color="primary"
           variant="contained"
           type="submit"
           className="form-button"

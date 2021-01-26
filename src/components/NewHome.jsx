@@ -219,7 +219,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 
-import ContactForm from './ContactForm';
+import NewContactForm from './NewContactForm';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons'
@@ -289,10 +289,21 @@ export default function NewHome() {
   }
 
   return (
-    <React.Fragment>
+    <div >
       <CssBaseline />
+      {/* <div className="bg" style={{
+        // backgroundPosition: "center center",
+        // backgroundRepeat: "no-repeat",
+        // backgroundAttachment: "fixed",
+        // backgroundSize: "cover",
+        height: "100vh",
+        width: "100vw",
+        position: "absolute",
+        background: "#d4d4d4",
+        zIndex: -1
+      }}></div> */}
       {/* Hero unit */}
-      <Container maxWidth="sm" component="main" className={classes.heroContent} className="title-wrapper">
+      <Container  maxWidth="sm" component="main" className={classes.heroContent} className="title-wrapper">
         <Typography
           component="h1"
           variant="h2"
@@ -329,7 +340,7 @@ export default function NewHome() {
       <Container>
         <div className="buttons-wrapper">
           <Button
-            color="secondary"
+            color="primary"
             className={classes.linkButton}
             onClick={() => setPageState("why-us")}
             variant="contained"
@@ -341,7 +352,7 @@ export default function NewHome() {
           </Button>
 
           <Button
-            color="secondary"
+            color="primary"
             className={classes.linkButton}
             onClick={() => setPageState("pricing")}
             variant="contained"
@@ -353,7 +364,7 @@ export default function NewHome() {
           </Button>
 
           <Button
-            color="secondary"
+            color="primary"
             className={classes.linkButton}
             onClick={() => contactClick()}
             variant="contained"
@@ -390,7 +401,8 @@ export default function NewHome() {
                 />
               </div> */}
               <FontAwesomeIcon className="font-awesome panel-icon" icon={faLaptopCode} style={{
-                fontSize: "12rem"
+                fontSize: "12rem",
+                color: "#3b3b3b"
               }}/>
             </div>
 
@@ -415,7 +427,8 @@ export default function NewHome() {
                 /> */}
               {/* </div> */}
               <FontAwesomeIcon className="font-awesome panel-icon" icon={faMoneyCheckAlt} style={{
-                fontSize: "12rem"
+                fontSize: "12rem",
+                color: "#3b3b3b"
               }}/>
             </div>
 
@@ -428,7 +441,7 @@ export default function NewHome() {
             width: "65%",
             justifyContent: "center"
           }}>
-            <ContactForm/>
+            <NewContactForm/>
           </div>
         )}
         </div>
@@ -436,11 +449,11 @@ export default function NewHome() {
 
       {/* Footer */}
       <Container maxWidth="md" component="footer" className={classes.footer}>
-        <Box mt={5}>
+        <Box>
           <Copyright />
         </Box>
       </Container>
       {/* End footer */}
-    </React.Fragment>
+    </div>
   );
 }
