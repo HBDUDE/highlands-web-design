@@ -94,7 +94,6 @@
 .centered-content {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .new-home-grid1 {
@@ -113,6 +112,7 @@
   .side-section {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     // transform: translateX(70px);
   }
 
