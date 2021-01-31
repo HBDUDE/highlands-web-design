@@ -94,6 +94,7 @@
 .centered-content {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .new-home-grid1 {
@@ -105,14 +106,14 @@
   align-content: center;
 
   .panel-text {
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
   }
 
   .side-section {
     display: flex;
-    justify-content: center;
-    // flex-basis: auto;
+    justify-content: flex-end;
+    // transform: translateX(70px);
   }
 
   .font-awesome {
@@ -126,6 +127,12 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     width: 100%;
+
+    .side-section {
+      display: flex;
+      justify-content: center;
+      // transform: translateX(70px);
+    }
   }
 }
 

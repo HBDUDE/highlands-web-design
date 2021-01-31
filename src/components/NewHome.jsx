@@ -299,7 +299,7 @@ export default function NewHome() {
         height: "100vh",
         width: "100vw",
         position: "absolute",
-        background: "#d4d4d4",
+        background: "#e4e4e4",
         zIndex: -1
       }}></div> */}
       {/* Hero unit */}
@@ -315,7 +315,7 @@ export default function NewHome() {
             // borderRadius: "2px",
             // boxShadow: "0px 6px 10px 0px #000000",
             fontSize: "2.5rem",
-            fontFamily: "Cabin",
+            fontFamily: "Cinzel",
             width:"100%"
           }}
         >
@@ -383,7 +383,7 @@ export default function NewHome() {
           <div className="new-home-grid1" id="why-us">
             <Typography 
               variant="h4" 
-              // align="center" 
+              // align="left" 
               className="panel-text"
               // style={{
               //   fontSize: "1.5rem"
