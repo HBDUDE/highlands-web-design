@@ -438,7 +438,8 @@ export default function NewHome() {
         {pageState === "contact" && (
           <div style={{
             display: "flex",
-            width: "60%",
+            width: "90%",
+            maxWidth: "700px",
             justifyContent: "center"
           }}>
             <NewContactForm/>
