@@ -411,7 +411,7 @@ export default function NewHome() {
 
         {pageState === "pricing" && (
           <div className="new-home-grid1" id="pricing">
-            <Typography variant="h4" className="" style={{
+            <Typography variant="h4" className="panel-text" style={{
                 fontSize: "1.5rem"
             }}>
               <span className="panel-text" style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
