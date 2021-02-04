@@ -82,7 +82,7 @@
   display: flex;
   justify-content: center;
   margin-top: 15px;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 }
 
 .centered-content {
@@ -97,6 +97,7 @@
   grid-gap: 5px;
   justify-content: center;
   align-content: center;
+  margin-top: 50px;
 
   .panel-text {
     text-align: left;

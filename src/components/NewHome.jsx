@@ -440,7 +440,7 @@ export default function NewHome() {
             display: "flex",
             width: "60%",
             minWidth: "400px",
-            justifyContent: "center",
+            justifyContent: "center"
           }}>
             <NewContactForm/>
           </div>
