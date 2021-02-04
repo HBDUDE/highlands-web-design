@@ -4,9 +4,7 @@ import './styles/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import ScopedCssBaseline from '@material-ui/core/ScopedCssBaseline';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Fixes bug with mobile height and UI
 // const resizer = () => document.documentElement.style.setProperty('--vh', `${window.innerHeight/100}px`);

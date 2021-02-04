@@ -287,7 +287,8 @@ export default function NewHome() {
   }
 
   return (
-    <div >
+    <div className="bg-img">
+    {/* <div  className="main"> */}
       <CssBaseline />
       {/* <div className="bg" style={{
         // backgroundPosition: "center center",
@@ -390,7 +391,7 @@ export default function NewHome() {
               <span className="panel-text-title" style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
                 Professional Development
               </span><br/>
-              We take care of design, coding, hosting, and search engine
+              We take care of design, coding, hosting, and mobile browser
               optimization. Contact us today for a free consultation.
             </Typography>
             <div className="side-section">
@@ -455,6 +456,7 @@ export default function NewHome() {
         </Box>
       </Container>
       {/* End footer */}
+    {/* </div> */}
     </div>
   );
 }

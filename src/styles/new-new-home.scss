@@ -1,0 +1,68 @@
+.container {
+  background-image: url("https://images.unsplash.com/photo-1538882227087-98290b0b7e58?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.title-container {
+  background-color: white;
+  // border-radius: 10px;
+  // color: rgb(63, 63, 63);
+  // opacity: 0.85;
+  width: 100%;
+  // max-width: 500px;
+  // margin: auto;
+  // margin-top: 20px;
+  // padding: 5px;
+  // padding-left: 30px;
+}
+
+.title {
+  font-family: Cinzel;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(97, 26, 0);
+  margin: 0;
+}
+
+.menu-outer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-container {
+  display: flex;
+  transition: all .4s ease-in-out;
+}
+
+.menu-button-wrapper {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  transition: all .08s ease-in-out;
+}
+
+.menu-button-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.menu-button-wrapper:active {
+  transform: scale(1);
+}
+
+.menu-button {
+  font-size: 20px;
+}
+
+.menu {
+  background-color: white;
+  width: 300px;
+}
