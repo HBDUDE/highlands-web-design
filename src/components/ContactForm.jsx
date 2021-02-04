@@ -16,7 +16,7 @@ export default function ContactForm() {
 
   async function sendEmail(e) {
     e.preventDefault()
-    await emailjs.sendForm('service_1zy4bex', 'template_bsdnx1q', e.target, 'user_zTtYQZEhcFOIsiUKK8gwl')
+    await emailjs.sendForm('service_c9nle13', 'template_m19hh5k', e.target, 'user_iXIvTFHP0ddpdvpHB3Zjg')
       .then((result) => {
         notify()
         console.log(result.text)

@@ -209,10 +209,8 @@
 // }
 
 import React, { useState } from "react";
-import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import { makeStyles } from "@material-ui/core/styles";
@@ -231,9 +229,9 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://highlandswebdesign.com/">
-        highlandswebdesign.com
+        highlandswebdesign6@gmail.com
       </Link>
-      {" 2020 | (310) 562-7707 | Portfolio of work upon request."}
+      {" 2019 | (310) 562-7707 | Portfolio of work upon request."}
     </Typography>
   );
 }
@@ -440,7 +438,8 @@ export default function NewHome() {
         {pageState === "contact" && (
           <div style={{
             display: "flex",
-            width: "65%",
+            width: "60%",
+            minWidth: "400px",
             justifyContent: "center"
           }}>
             <NewContactForm/>
