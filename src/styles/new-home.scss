@@ -82,13 +82,7 @@
   display: flex;
   justify-content: center;
   margin-top: 15px;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 870px) {
-  .buttons-wrapper {
-    transform: translateX(-10px);
-  }
+  margin-bottom: 25px;
 }
 
 .centered-content {
@@ -98,8 +92,8 @@
 
 .new-home-grid1 {
   display: grid;
-  grid-template-columns: 3fr 4fr;
-  width: 60%;
+  grid-template-columns: 3fr 3fr;
+  width: 55%;
   grid-gap: 5px;
   justify-content: center;
   align-content: center;
