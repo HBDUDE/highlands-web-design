@@ -224,18 +224,6 @@ import { faLaptopCode, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons
 
 import "../styles/new-home.scss";
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://highlandswebdesign.com/">
-        highlandswebdesign6@gmail.com
-      </Link>
-      {" 2019 | (310) 562-7707 | Portfolio of work upon request."}
-    </Typography>
-  );
-}
-
 const useStyles = makeStyles(theme => ({
   "@global": {
     ul: {
@@ -452,7 +440,13 @@ export default function NewHome() {
       {/* Footer */}
       <Container maxWidth="md" component="footer" className={classes.footer}>
         <Box>
-          <Copyright />
+          <Typography variant="body2" color="textSecondary" align="center">
+            {"Copyright © "}
+            <Link color="inherit" href="https://highlandswebdesign.com/">
+              highlandswebdesign6@gmail.com
+            </Link>
+            {" 2019 | (310) 562-7707 | Portfolio of work upon request."}
+          </Typography>
         </Box>
       </Container>
       {/* End footer */}

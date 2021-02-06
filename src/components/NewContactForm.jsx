@@ -1,14 +1,8 @@
 import React, {useState} from 'react'
 import emailjs from 'emailjs-com'
-// import Button from "@material-ui/core/Button";
-// import { Button } from 'reactstrap'
 import Button from "@material-ui/core/Button";
-import {toast} from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 
 import '../styles/contact-form.scss'
-
-// toast.configure() 
 
 export default function ContactForm() {
 
