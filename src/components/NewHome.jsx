@@ -3,57 +3,58 @@ import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
-import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
-
 import NewContactForm from './NewContactForm';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons'
+import useStyles from "./HomeUseStyles"
 
 import "../styles/new-home.scss";
 
-const useStyles = makeStyles(theme => ({
-  "@global": {
-    ul: {
-      margin: 0,
-      padding: 0,
-      listStyle: "none"
-    }
-  },
-  appBar: {
-    borderBottom: `1px solid ${theme.palette.divider}`
-  },
-  toolbar: {
-    flexWrap: "wrap"
-  },
-  toolbarTitle: {
-    flexGrow: 1
-  },
-  link: {
-    margin: theme.spacing(1, 1.5),
-    textTransform: "capitalize"
-  },
-  linkButton: {
-    margin: theme.spacing(1, 1.5),
-    textTransform: "capitalize",
-    fontFamily: "Cabin",
-  },
-  heroContent: {
-    padding: theme.spacing(8, 0, 6)
-  },
-  footer: {
-    borderTop: `1px solid ${theme.palette.divider}`,
-    marginTop: theme.spacing(8),
-    paddingTop: theme.spacing(3),
-    paddingBottom: theme.spacing(3),
-    [theme.breakpoints.up("sm")]: {
-      paddingTop: theme.spacing(6),
-      paddingBottom: theme.spacing(6)
-    }
-  }
-}));
+// Moved the below styling to HomeUseSty...js 
+// Keeping copy here lest mission critical error
+
+// const useStyles = makeStyles(theme => ({
+//   "@global": {
+//     ul: {
+//       margin: 0,
+//       padding: 0,
+//       listStyle: "none"
+//     }
+//   },
+//   appBar: {
+//     borderBottom: `1px solid ${theme.palette.divider}`
+//   },
+//   toolbar: {
+//     flexWrap: "wrap"
+//   },
+//   toolbarTitle: {
+//     flexGrow: 1
+//   },
+//   link: {
+//     margin: theme.spacing(1, 1.5),
+//     textTransform: "capitalize"
+//   },
+//   linkButton: {
+//     margin: theme.spacing(1, 1.5),
+//     textTransform: "capitalize",
+//     fontFamily: "Cabin",
+//   },
+//   heroContent: {
+//     padding: theme.spacing(8, 0, 6)
+//   },
+//   footer: {
+//     borderTop: `1px solid ${theme.palette.divider}`,
+//     marginTop: theme.spacing(8),
+//     paddingTop: theme.spacing(3),
+//     paddingBottom: theme.spacing(3),
+//     [theme.breakpoints.up("sm")]: {
+//       paddingTop: theme.spacing(6),
+//       paddingBottom: theme.spacing(6)
+//     }
+//   }
+// }));
 
 export default function NewHome() {
   const classes = useStyles();
