@@ -69,17 +69,6 @@ export default function NewHome() {
     <div className="bg-img">
     {/* <div  className="main"> */}
       <CssBaseline />
-      {/* <div className="bg" style={{
-        // backgroundPosition: "center center",
-        // backgroundRepeat: "no-repeat",
-        // backgroundAttachment: "fixed",
-        // backgroundSize: "cover",
-        height: "100vh",
-        width: "100vw",
-        position: "absolute",
-        background: "#e4e4e4",
-        zIndex: -1
-      }}></div> */}
       {/* Hero unit */}
       <Container  maxWidth="sm" component="main" className={classes.heroContent} className="title-wrapper">
         <Typography
