@@ -13,11 +13,19 @@ import useStyles from "./HomeUseStyles"
 import "../styles/new-home.scss";
 
 export default function NewHome() {
-  const classes = useStyles();
-  const [pageState, setPageState] = useState("why-us");
+  const classes = useStyles()
+  const [pageState, setPageState] = useState("why-us")
   const contactClick = () => {
-    setPageState("contact"); 
-    window.scrollTo(0,document.body.scrollHeight);
+    setPageState("contact") 
+    window.scrollTo(0,document.body.scrollHeight)
+  }
+  const whyUsClick = () => {
+    setPageState("why-us")
+    window.scrollTo(0,0)
+  }
+  const pricingClick = () => {
+    setPageState("pricing")
+    window.scrollTo(0,0)
   }
 
   return (
@@ -63,7 +71,7 @@ export default function NewHome() {
           <Button
             color="primary"
             className={classes.linkButton}
-            onClick={() => setPageState("why-us")}
+            onClick={whyUsClick}
             variant="contained"
             style={{
               width: "10rem"
@@ -75,7 +83,7 @@ export default function NewHome() {
           <Button
             color="primary"
             className={classes.linkButton}
-            onClick={() => setPageState("pricing")}
+            onClick={pricingClick}
             variant="contained"
             style={{
               width: "10rem"
@@ -184,5 +192,5 @@ export default function NewHome() {
       {/* End footer */}
     {/* </div> */}
     </div>
-  );
+  )
 }
