@@ -2,7 +2,7 @@ import React from 'react'
 
 import Maintenance from './components/Maintenance'
 import NewHome from './components/NewHome'
-import NewHomeRefactor from './components/NewHomeRefactor'
+import NewHomeBackup from './components/NewHomeBackup'
 
 const pageVariable = 'new-home'
 
@@ -14,7 +14,7 @@ const App = () => {
     return <NewHome/>
   } 
   else if(pageVariable === 'backup') {
-    return <NewHomeRefactor/>
+    return <NewHomeBackup/>
   }
 }
 export default App;

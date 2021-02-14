@@ -125,6 +125,11 @@
 
 
 // Updates upon screen width below 870px
+.main-div {
+  width: 100%;
+  height: 75%;
+}
+
 @media screen and (max-width: 870px) {
   .new-home-grid1 {
     grid-template-columns: 1fr;

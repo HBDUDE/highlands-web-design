@@ -15,14 +15,13 @@ import "../styles/new-home.scss";
 export default function NewHome() {
   const classes = useStyles();
   const [pageState, setPageState] = useState("why-us");
-
   const contactClick = () => {
     setPageState("contact"); 
     window.scrollTo(0,document.body.scrollHeight);
   }
 
   return (
-    <div className="bg-img">
+    <div className="main-div">
     {/* <div  className="main"> */}
       <CssBaseline />
       {/* Hero unit */}
