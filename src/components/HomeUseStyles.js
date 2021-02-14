@@ -2,20 +2,11 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   "@global": {
-    ul: {
-      margin: 0,
-      padding: 0,
-      listStyle: "none"
-    }
-  },
-  appBar: {
-    borderBottom: `1px solid ${theme.palette.divider}`
-  },
-  toolbar: {
-    flexWrap: "wrap"
-  },
-  toolbarTitle: {
-    flexGrow: 1
+  ul: {
+    margin: 0,
+    padding: 0,
+    listStyle: "none"
+  }
   },
   link: {
     margin: theme.spacing(1, 1.5),
@@ -35,8 +26,8 @@ const useStyles = makeStyles(theme => ({
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
     [theme.breakpoints.up("sm")]: {
-      paddingTop: theme.spacing(6),
-      paddingBottom: theme.spacing(6)
+      paddingTop: theme.spacing(1),
+      paddingBottom: theme.spacing(1)
     }
   }
 }));

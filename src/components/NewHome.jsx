@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
@@ -30,40 +29,17 @@ export default function NewHome() {
 
   return (
     <div className="main-div">
-    {/* <div  className="main"> */}
       <CssBaseline />
-      {/* Hero unit */}
       <Container  maxWidth="sm" component="main" className={classes.heroContent} className="title-wrapper">
-        <Typography
-          component="h1"
-          variant="h2"
-          color="textPrimary"
-          gutterBottom
-          className="main-title"
-          style={{
-            fontFamily: "Cinzel",
-            fontSize: "2.5rem",
-            width:"100%"
-          }}
-        >
+        <div className="main-title">
           Highlands Web Design
           {/* This font doesnt have any more bold */}
-        </Typography>
-        <Typography
-          variant="h5"
-          // color="textSecondary"
-          component="p"
-          className="main-sub-title"
-          style={{
-            // fontSize: "1.3rem",
-            fontFamily: "Cabin",
-            color: "#3b3b3",
-            opacity: .8
-          }}
-        >
+        </div>
+
+        <div className="main-sub-title">
           High-quality, affordable websites to take your company to the next
           level.
-        </Typography>
+        </div>
       </Container>
 
       <Container>
@@ -108,27 +84,14 @@ export default function NewHome() {
         <div className="centered-content">
         {pageState === "why-us" && (
           <div className="new-home-grid1" id="why-us">
-            <Typography 
-              variant="h4" 
-              // align="left" 
-              className="panel-text"
-              // style={{
-              //   fontSize: "1.5rem"
-              // }}
-            >
+            <div className="panel-text">
               <span className="panel-text-title" style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
                 Professional Development
               </span><br/>
               We take care of design, coding, hosting, and mobile browser
               optimization. Contact us today for a free consultation.
-            </Typography>
+            </div>
             <div className="side-section">
-              {/* <div className="img-class">
-                <ReactImageAppear 
-                  src={codeImg}
-                  className="img-class"
-                />
-              </div> */}
               <FontAwesomeIcon className="font-awesome panel-icon" icon={faLaptopCode} style={{
                 fontSize: "12rem",
                 color: "#3b3b3b"
@@ -140,21 +103,13 @@ export default function NewHome() {
 
         {pageState === "pricing" && (
           <div className="new-home-grid1" id="pricing">
-            <Typography variant="h4" className="panel-text" style={{
-                fontSize: "1.5rem"
-            }}>
-              <span className="panel-text" style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
+            <div className="panel-text">
+              <span style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
                 Affordable Web Design
               </span><br/>
               We offer financing options such as low monthly payments to get your site up and running without hurting your wallet!
-            </Typography>
+            </div>
             <div className="side-section">
-              {/* <div className="img-class"> */}
-                {/* <ReactImageAppear 
-                  src={moneyImg}
-                  className="img-class"
-                /> */}
-              {/* </div> */}
               <FontAwesomeIcon className="font-awesome panel-icon" icon={faMoneyCheckAlt} style={{
                 fontSize: "12rem",
                 color: "#3b3b3b"
@@ -165,32 +120,24 @@ export default function NewHome() {
         )}
 
         {pageState === "contact" && (
-          <div style={{
-            display: "flex",
-            width: "90%",
-            maxWidth: "700px",
-            justifyContent: "center"
-          }}>
+          <div className="form-wrapper">
             <NewContactForm/>
           </div>
         )}
         </div>
       </Container>
 
-      {/* Footer */}
       <Container maxWidth="md" component="footer" className={classes.footer}>
-        <Box>
-          <Typography variant="body2" color="textSecondary" align="center">
+        <Box textAlign="center">
+          <div>
             {"Copyright © "}
             <Link color="inherit" href="https://highlandswebdesign.com/">
               highlandswebdesign6@gmail.com
             </Link>
             {" 2019 | (310) 562-7707 | Portfolio of work upon request."}
-          </Typography>
+          </div>
         </Box>
       </Container>
-      {/* End footer */}
-    {/* </div> */}
     </div>
   )
 }
