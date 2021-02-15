@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
   "@global": {
@@ -26,6 +26,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
     [theme.breakpoints.up("sm")]: {
+      marginTop: theme.spacing(1),
       paddingTop: theme.spacing(1),
       paddingBottom: theme.spacing(1)
     }

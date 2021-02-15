@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import Button from "@material-ui/core/Button";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Link from "@material-ui/core/Link";
-import Container from "@material-ui/core/Container";
-import Box from "@material-ui/core/Box";
-import NewContactForm from './NewContactForm';
+import React, { useState } from "react"
+import Button from "@material-ui/core/Button"
+import CssBaseline from "@material-ui/core/CssBaseline"
+import Link from "@material-ui/core/Link"
+import Container from "@material-ui/core/Container"
+import Box from "@material-ui/core/Box"
+import NewContactForm from './NewContactForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons'
 import useStyles from "./HomeUseStyles"
 
-import "../styles/new-home.scss";
+import "../styles/new-home.scss"
 
 export default function NewHome() {
   const classes = useStyles()

@@ -7,12 +7,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 
-import NewContactForm from './NewContactForm';
+import NewContactForm from '../NewContactForm';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faMoneyCheckAlt } from '@fortawesome/free-solid-svg-icons'
 
-import "../styles/new-home.scss";
+import "../../styles/new-home.scss";
 
 const useStyles = makeStyles(theme => ({
   "@global": {
