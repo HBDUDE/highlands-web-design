@@ -31,14 +31,14 @@
 }
 
 .main-div {
-  background: linear-gradient(270deg, #b0f3e1, #fad5fe, #c4ffff, #ffffff);
+  background: linear-gradient(270deg, #b0f3e1, #ffffff, #fce1ff, #ffffff, #c4ffff, #ffffff);
   background-size: 800% 800%;
 
-  -webkit-animation: AnimationName 15s ease infinite;
-  -moz-animation: AnimationName 15s ease infinite;
-  animation: AnimationName 15s ease infinite;
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
+  animation: AnimationName 16s ease infinite;
 
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
@@ -157,7 +157,7 @@
     }
 
     .panel-text {
-      text-align: left;
+      // text-align: left;
       // font-size: 2rem;
     }
     
