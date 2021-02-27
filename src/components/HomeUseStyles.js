@@ -16,6 +16,7 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(1, 1.5),
     textTransform: "capitalize",
     fontFamily: "Cabin",
+    width: "10rem"
   },
   heroContent: {
     padding: theme.spacing(8, 0, 6)

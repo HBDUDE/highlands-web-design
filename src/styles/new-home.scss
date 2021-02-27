@@ -30,6 +30,8 @@
   }
 }
 
+// Main block of styles
+
 .main-div {
   background: linear-gradient(270deg, #b0f3e1, #ffffff, #fce1ff, #ffffff, #c4ffff, #ffffff);
   background-size: 800% 800%;
@@ -61,7 +63,6 @@
   100%{background-position:0% 50%}
 }
 
-// Main block of styles
 .main-title {
   text-align: center;
   justify-self: center;
@@ -104,15 +105,19 @@
   .panel-text {
     text-align: center;
     font-size: 1.5rem;
-    // font-size: 1.75vw;
     height: 80%;
+
+    .panel-text-title {
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
   }
 
   .side-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    // transform: translateY(70px);
   }
 
   .font-awesome {
@@ -154,11 +159,6 @@
 
     .side-section {
       display: none;
-    }
-
-    .panel-text {
-      // text-align: left;
-      // font-size: 2rem;
     }
     
     .panel-icon {

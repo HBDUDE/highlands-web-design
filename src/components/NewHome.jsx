@@ -49,9 +49,6 @@ export default function NewHome() {
             className={classes.linkButton}
             onClick={whyUsClick}
             variant="contained"
-            style={{
-              width: "10rem"
-            }}
           >
             Why Us?
           </Button>
@@ -61,9 +58,6 @@ export default function NewHome() {
             className={classes.linkButton}
             onClick={pricingClick}
             variant="contained"
-            style={{
-              width: "10rem"
-            }}
           >
             Pricing
           </Button>
@@ -73,9 +67,6 @@ export default function NewHome() {
             className={classes.linkButton}
             onClick={() => contactClick()}
             variant="contained"
-            style={{
-              width: "10rem"
-            }}
           >
             Contact
           </Button>
@@ -85,7 +76,7 @@ export default function NewHome() {
           {pageState === "why-us" && (
             <div className="new-home-grid1" id="why-us">
               <div className="panel-text">
-                <span className="panel-text-title" style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
+                <span className="panel-text-title">
                   Professional Development
                 </span><br/>
                 We take care of design, coding, hosting, and mobile browser
@@ -100,7 +91,7 @@ export default function NewHome() {
           {pageState === "pricing" && (
             <div className="new-home-grid1" id="pricing">
               <div className="panel-text">
-                <span style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
+                <span className="panel-text-title">
                   Affordable Web Design
                 </span><br/>
                 We offer financing options such as low monthly payments to get your site up and running without hurting your wallet!
