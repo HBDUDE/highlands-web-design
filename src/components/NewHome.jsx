@@ -16,7 +16,7 @@ export default function NewHome() {
   const [pageState, setPageState] = useState("why-us")
   const contactClick = () => {
     setPageState("contact") 
-    window.scrollTo(0,document.body.scrollHeight)
+    window.scrollTo(0,document.body.scrollHeight / 3)
   }
   const whyUsClick = () => {
     setPageState("why-us")
@@ -82,48 +82,40 @@ export default function NewHome() {
         </div>
 
         <div className="centered-content">
-        {pageState === "why-us" && (
-          <div className="new-home-grid1" id="why-us">
-            <div className="panel-text">
-              <span className="panel-text-title" style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
-                Professional Development
-              </span><br/>
-              We take care of design, coding, hosting, and mobile browser
-              optimization. Contact us today for a free consultation.
+          {pageState === "why-us" && (
+            <div className="new-home-grid1" id="why-us">
+              <div className="panel-text">
+                <span className="panel-text-title" style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
+                  Professional Development
+                </span><br/>
+                We take care of design, coding, hosting, and mobile browser
+                optimization. Contact us today for a free consultation.
+              </div>
+              <div className="side-section">
+                <FontAwesomeIcon className="font-awesome panel-icon" icon={faLaptopCode}/>
+              </div>
             </div>
-            <div className="side-section">
-              <FontAwesomeIcon className="font-awesome panel-icon" icon={faLaptopCode} style={{
-                fontSize: "12rem",
-                color: "#3b3b3b"
-              }}/>
+          )}
+
+          {pageState === "pricing" && (
+            <div className="new-home-grid1" id="pricing">
+              <div className="panel-text">
+                <span style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
+                  Affordable Web Design
+                </span><br/>
+                We offer financing options such as low monthly payments to get your site up and running without hurting your wallet!
+              </div>
+              <div className="side-section">
+                <FontAwesomeIcon className="font-awesome panel-icon" icon={faMoneyCheckAlt}/>
+              </div>
             </div>
+          )}
 
-          </div>
-        )}
-
-        {pageState === "pricing" && (
-          <div className="new-home-grid1" id="pricing">
-            <div className="panel-text">
-              <span style={{ fontWeight: "bold", display: "inline-block", marginBottom: "10px" }}>
-                Affordable Web Design
-              </span><br/>
-              We offer financing options such as low monthly payments to get your site up and running without hurting your wallet!
+          {pageState === "contact" && (
+            <div className="form-wrapper">
+              <NewContactForm/>
             </div>
-            <div className="side-section">
-              <FontAwesomeIcon className="font-awesome panel-icon" icon={faMoneyCheckAlt} style={{
-                fontSize: "12rem",
-                color: "#3b3b3b"
-              }}/>
-            </div>
-
-          </div>
-        )}
-
-        {pageState === "contact" && (
-          <div className="form-wrapper">
-            <NewContactForm/>
-          </div>
-        )}
+          )}
         </div>
       </Container>
 
