@@ -1,5 +1,9 @@
 input, textarea {
-  border: 1px solid black;
+  border: none;
+  border-radius: 0 0 2px 2px;
+  border-bottom: 3px solid rgb(35, 160, 255);
+  -webkit-box-shadow: 0px 4px 30px -30px #000000; 
+  box-shadow: 0px 4px 15px -4px #000000;
 }
 
 .success {
@@ -26,7 +30,7 @@ input, textarea {
 }
 
 .form-input {
-  // margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .form-text-area {
