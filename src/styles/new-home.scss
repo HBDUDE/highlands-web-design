@@ -30,9 +30,39 @@
   }
 }
 
+.main-div {
+  background: linear-gradient(270deg, #b0f3e1, #fad5fe, #c4ffff, #ffffff);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 // Main block of styles
 .main-title {
-  // margin: 0;
   text-align: center;
   justify-self: center;
   animation: title-fade-in 2.5s;
