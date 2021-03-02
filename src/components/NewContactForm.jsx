@@ -26,7 +26,6 @@ export default function ContactForm() {
 
       <div className="success" style={{
         opacity: opacityState,
-        color: "#008507"
       }}>
         Email sent!
       </div>
